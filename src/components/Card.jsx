@@ -45,7 +45,7 @@ function Card() {
              May you feel peace in the quiet, laughter in the little things, and warmth in the way the world shows up for you today and always.
             </p>
             <p>
-              May your life be filled with barakah, in your time, your health, your riqz.
+              May your life be filled with barakah, in your time, your health, your rizq.
             </p>
              <p>
               Amin Ya Rabbal Alamin
