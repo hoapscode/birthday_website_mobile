@@ -37,7 +37,7 @@ function Card() {
         <div id="card-inside">
           <div className="wrap">
             <p>Happy Birthday, Jasmin!</p>
-            <p>On this day the stars once dancd, welcoming your light into the world, a gentle flame with dreams entranced.</p>
+            <p>On this day the stars once danced, welcoming your light into the world, a gentle flame with dreams entranced.</p>
             <p>
               I hope you have a very blessed birthday!
             </p>
