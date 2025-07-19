@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { picture} from '../assets';
+import { wish1, wish2} from '../assets';
 import { Link } from 'react-router-dom'; 
 import SectionWrapper from './SectionWrapper';
 // Add your own images by putting them in the assets folder and import them.
 const images = [
- picture,
- picture,
- picture,
- picture,
+ wish1,
+ wish2,
 
 ];
 function Picture() {
