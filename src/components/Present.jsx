@@ -29,6 +29,11 @@ function Present() {
               <span className="ticket-text">Gift of<br/>Divine Guidance</span>
             </div>
           </div>
+          <Link to ='/Home'>
+        <p className="-mt-[4rem] px-7 py-3 bg-customBlue text-white font-medium text-base rounded-full hover:bg-blue-600">
+            Restart
+          </p>
+        </Link>
         </label>
       </div>
     </SectionWrapper>
