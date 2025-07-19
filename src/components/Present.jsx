@@ -4,6 +4,19 @@ import "../assets/css/present.css";
 function Present() {
   return (
     <SectionWrapper>
+      {isCardOpened && (
+        <motion.div className="-mt-[3rem]" initial={{ opacity: 0, visibility: "hidden" }}
+        animate={{ opacity: 1, visibility: "visible" }}
+        transition={{duration: 1.2}}> 
+        <Link to ='/home'>
+        <p className="-mt-[4rem] px-7 py-3 bg-customBlue text-white font-medium text-base rounded-full hover:bg-blue-600">
+            Restart
+          </p>
+        </Link>
+            
+        </motion.div>
+         
+        )}
       <div className='mb-64'>
         <h1 className="absolute -top-[7rem] left-0 right-0 text-center flex items-center justify-center text-xl font-extrabold text-customBlue drop-shadow-lg">
           Click the box to see your gifts!
@@ -29,11 +42,6 @@ function Present() {
               <span className="ticket-text">Gift of<br/>Divine Guidance</span>
             </div>
           </div>
-          <Link to ='/Home'>
-        <p className="-mt-[4rem] px-7 py-3 bg-customBlue text-white font-medium text-base rounded-full hover:bg-blue-600">
-            Restart
-          </p>
-        </Link>
         </label>
       </div>
     </SectionWrapper>
