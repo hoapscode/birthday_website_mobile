@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 function Cake() {
   // You may want to tweak these audio codes more to your liking.
-  const [candlesBlownOut, setCandlesBlownOut] = useState(false);
-  const [micPermissionGranted, setMicPermissionGranted] = useState(false);
+  const [candlesBlownOut, setCandlesBlownOut] = useState(true);
+  const [micPermissionGranted, setMicPermissionGranted] = useState(true);
 
   useEffect(() => {
     let audioContext;
@@ -18,7 +18,7 @@ function Cake() {
     async function initBlowDetection() {
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
-          audio: true,
+          audio: false,
         });
         audioContext = new (window.AudioContext || window.AudioContext)();
         analyser = audioContext.createAnalyser();
@@ -107,7 +107,7 @@ function Cake() {
               </text>
             </svg>
             <Link to="/present" className="flex justify-center items-center">
-              <p className="absolute top-[30rem] xs:top-[36rem] s:top-[40rem] px-7 py-3 bg-customBlue text-white rounded-full hover:bg-blue-600 font-medium text-base text-center ">
+              <p className="-mt-[4rem] px-7 py-3 bg-customBlue text-white font-medium text-base rounded-full hover:bg-blue-600">
                 Next Page
               </p>
             </Link>
